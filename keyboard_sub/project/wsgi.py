@@ -1,5 +1,5 @@
 """
-WSGI config for suhrob_sub project.
+WSGI config for keyboard_sub project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'suhrob_sub.suhrob.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'keyboard_sub.project.settings')
 
 application = get_wsgi_application()

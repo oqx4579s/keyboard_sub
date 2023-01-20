@@ -10,7 +10,7 @@ networks:
 services:
   db:
     image: "postgres:alpine"
-    container_name: "suhrob_sub_db"
+    container_name: "keyboard_sub_db"
     env_file:
       - envs/pg.env
     volumes:
@@ -21,7 +21,7 @@ services:
       - "5432:5432"
   web:
     build: .
-    container_name: "suhrob_sub_web"
+    container_name: "keyboard_sub_web"
     env_file:
       - envs/web.env
     volumes:

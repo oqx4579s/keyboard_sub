@@ -1,5 +1,5 @@
 from django.contrib import admin
-from suhrob_sub.subscriber.models import Log
+from keyboard_sub.subscriber.models import Log
 
 
 @admin.register(Log)

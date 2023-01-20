@@ -11,7 +11,7 @@ from zmq.auth.base import Authenticator
 from zmq.sugar.context import Context
 from zmq.sugar.socket import Socket
 
-from suhrob_sub.subscriber.models import Log
+from keyboard_sub.subscriber.models import Log
 
 logger = logging.getLogger()
 

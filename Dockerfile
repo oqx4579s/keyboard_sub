@@ -19,12 +19,12 @@ COPY poetry.lock pyproject.toml README.md ./
 
 RUN poetry config virtualenvs.create false && poetry install --no-root --no-interaction --no-cache --without=dev
 
-COPY suhrob_sub ./suhrob_sub
+COPY keyboard_sub ./keyboard_sub
 
 RUN poetry build -f wheel
-RUN pip install dist/suhrob_sub-*.whl --no-deps
+RUN pip install dist/keyboard_sub-*.whl --no-deps
 RUN rm -rf *
 
 COPY makefile ./
 
-ENTRYPOINT gunicorn suhrob_sub.suhrob.wsgi --workers $WORKERS --bind $HOST:$PORT
+ENTRYPOINT gunicorn keyboard_sub.project.wsgi --workers $WORKERS --bind $HOST:$PORT

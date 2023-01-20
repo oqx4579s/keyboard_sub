@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "suhrob_sub"
+name = "keyboard_sub"
 version = "0.1.0"
 description = ""
 authors = ["qwe"]
 readme = "README.md"
-packages = [{include = "suhrob_sub"}]
+packages = [{include = "keyboard_sub"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
