@@ -1,0 +1,34 @@
+version: "3.9"
+
+volumes:
+  pg_volume:
+  static_volume:
+
+networks:
+  pg_network:
+
+services:
+  db:
+    image: "postgres:alpine"
+    container_name: "suhrob_sub_db"
+    env_file:
+      - envs/pg.env
+    volumes:
+      - pg_volume:/var/lib/postgresql/data
+    networks:
+      - pg_network
+    ports:
+      - "5432:5432"
+  web:
+    build: .
+    container_name: "suhrob_sub_web"
+    env_file:
+      - envs/web.env
+    volumes:
+      - static_volume:/opt/static
+    networks:
+      - pg_network
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"

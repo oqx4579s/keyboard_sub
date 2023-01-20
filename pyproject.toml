@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "suhrob_sub"
+version = "0.1.0"
+description = ""
+authors = ["qwe"]
+readme = "README.md"
+packages = [{include = "suhrob_sub"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+zmq = "0.0.0"
+pytz = "2022.7.1"
+Django = "4.1.5"
+gunicorn = "20.1.0"
+psycopg2-binary = "2.9.5"
+mock = "^5.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
