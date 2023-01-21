@@ -130,21 +130,10 @@ category = "main"
 optional = false
 python-versions = ">=2"
 
-[[package]]
-name = "zmq"
-version = "0.0.0"
-description = "You are probably looking for pyzmq."
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-pyzmq = "*"
-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "e7d109ede09706eb025aa3fbb42f0d4854fe2582e3180f424ce8d1ac452f6cc4"
+content-hash = "0c29d408055a76a23d4b133b3e900b7836067b97ab3c8ff49db2f63a4f6632d9"
 
 [metadata.files]
 asgiref = [
@@ -414,8 +403,4 @@ sqlparse = [
 tzdata = [
     {file = "tzdata-2022.7-py2.py3-none-any.whl", hash = "sha256:2b88858b0e3120792a3c0635c23daf36a7d7eeeca657c323da299d2094402a0d"},
     {file = "tzdata-2022.7.tar.gz", hash = "sha256:fe5f866eddd8b96e9fcba978f8e503c909b19ea7efda11e52e39494bad3a7bfa"},
-]
-zmq = [
-    {file = "zmq-0.0.0.tar.gz", hash = "sha256:6b1a1de53338646e8c8405803cffb659e8eb7bb02fff4c9be62a7acfac8370c9"},
-    {file = "zmq-0.0.0.zip", hash = "sha256:21cfc6be254c9bc25e4dabb8a3b2006a4227966b7b39a637426084c8dc6901f7"},
 ]

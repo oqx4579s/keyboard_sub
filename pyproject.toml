@@ -8,11 +8,11 @@ packages = [{include = "keyboard_sub"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-zmq = "0.0.0"
 pytz = "2022.7.1"
 Django = "4.1.5"
 gunicorn = "20.1.0"
 psycopg2-binary = "2.9.5"
+pyzmq = "25.0.0"
 
 
 [build-system]
