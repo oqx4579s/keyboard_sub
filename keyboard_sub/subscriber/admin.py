@@ -8,3 +8,11 @@ class LogAdmin(admin.ModelAdmin):
     search_fields = ('en', 'ru', 'date')
     list_filter = ('favorite', )
     readonly_fields = ('en', 'ru', 'date')
+    fieldsets = (
+        (None, {
+            'fields': ('en', 'ru', 'date'),
+        }),
+        (None, {
+            'fields': ('favorite', 'note'),
+        }),
+    )
