@@ -6,6 +6,8 @@ class Log(models.Model):
     en = models.TextField(blank=True)
     ru = models.TextField(blank=True)
     date = models.DateTimeField(verbose_name=_('Date'))
+    favorite = models.BooleanField(default=False, verbose_name=_('Favorite'))
+    note = models.TextField(blank=True, verbose_name=_('Note'))
 
     class Meta:
         verbose_name = _('Log')

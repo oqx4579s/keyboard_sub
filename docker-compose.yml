@@ -11,6 +11,7 @@ services:
   db:
     image: "postgres:alpine"
     container_name: "keyboard_sub_db"
+    restart: always
     env_file:
       - envs/pg.env
     volumes:
@@ -22,6 +23,7 @@ services:
   web:
     build: .
     container_name: "keyboard_sub_web"
+    restart: always
     env_file:
       - envs/web.env
     volumes:
